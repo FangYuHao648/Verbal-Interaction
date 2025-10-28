@@ -1,6 +1,6 @@
-# Verbal-Interaction 项目说明
+# Dyadic Neural Synchronization: Differences  Between Offline and Computer-Assisted Online  Verbal Interaction
 
-本仓库整理了用于“Verbal Interaction”相关脑电分析的 MATLAB 代码，涵盖从双人被试的跨脑同步（ISC）计算，到显著边的功能网络指标统计。代码主要用于校验与复现论文中的分析流程。
+本仓库整理了用于 “Dyadic Neural Synchronization: Differences  Between Offline and Computer-Assisted Online  Verbal Interaction” 相关脑电分析的 MATLAB 代码，涵盖从双人被试的跨脑同步（ISC）计算，到显著边的功能网络指标统计。代码主要用于校验与复现论文中的分析流程。
 
 ## 目录结构概览
 
