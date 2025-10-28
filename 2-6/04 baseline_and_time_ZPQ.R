@@ -5,8 +5,6 @@ library(dplyr)
 library(readxl)  # 添加 readxl 包用于读取 Excel 文件
 
 # 读取你的 Excel 数据
-#df <- read_excel("C:\\tool\\BrainNetZPQ\\dataset\\Re_ISC_end_filled_end.xlsx")
-#df <- read_excel("F:/BRAIT Lab/05 BBI - Documents/2025/HBM Paper/05 论文数据与代码/residual effect/Re_ISC_end_filled_end.xlsx")
 df <- read_excel("D:\\桌面\\Matlab Working path\\residual effect\\Re_ISC_end_filled_end.xlsx")
 
 # --- 2. 确保数据格式正确 ---
