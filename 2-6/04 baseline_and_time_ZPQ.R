@@ -45,61 +45,61 @@ model_pre_F <- build_model(
   df
 )
 
-# 模型2.5：加入一个滞留效应 (Pre_InformationType)
+# 模型3：加入一个滞留效应 (Pre_InformationType)
 model_pre_I<- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Information+ (1 | subject),
   df
 )
 
-# 模型2.5：加入一个滞留效应 (Pre_Eyecontact)
+# 模型4：加入一个滞留效应 (Pre_Eyecontact)
 model_pre_E <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_EyeContact+ (1 | subject),
   df
 )
 
 
-# 模型3：(Pre_Feedback+Pre_Information)
+# 模型5：(Pre_Feedback+Pre_Information)
 model_pre_FI <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback + Pre_Information + (1 | subject),
   df
 )
 
-# 模型4：加入两个滞留效应的交互 (Pre_Feedback * Pre_Information)
+# 模型6：加入两个滞留效应的交互 (Pre_Feedback * Pre_Information)
 model_pre_FI_int <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback * Pre_Information + (1 | subject),
   df
 )
 
-# 模型4：加入两个滞留效应的交互 (Pre_Feedback + Pre_Eyecontact)
+# 模型7：加入两个滞留效应的交互 (Pre_Feedback + Pre_Eyecontact)
 model_pre_FE<- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback + Pre_EyeContact + (1 | subject),
   df
 )
 
-# 模型4：加入两个滞留效应的交互 (Pre_Feedback *Pre_Eyecontact)
+# 模型8：加入两个滞留效应的交互 (Pre_Feedback *Pre_Eyecontact)
 model_pre_FE_int <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback *Pre_EyeContact + (1 | subject),
   df
 )
 
-# 模型4：加入两个滞留效应的交互 (Pre_Information +Pre_Eyecontact)
+# 模型9：加入两个滞留效应的交互 (Pre_Information +Pre_Eyecontact)
 model_pre_IE <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Information+Pre_EyeContact + (1 | subject),
   df
 )
 
-# 模型4：加入两个滞留效应的交互 (Pre_Information*Pre_Eyecontact)
+# 模型10：加入两个滞留效应的交互 (Pre_Information*Pre_Eyecontact)
 model_pre_IE_int <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Information*Pre_EyeContact + (1 | subject),
   df
 )
-# 模型5：加入所有三个滞留效应的交互 (Pre_Feedback + Pre_Information + Pre_EyeContact)
+# 模型11：加入所有三个滞留效应的交互 (Pre_Feedback + Pre_Information + Pre_EyeContact)
 model_pre_FIE <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback + Pre_Information + Pre_EyeContact + (1 | subject),
   df
 )
 
-# 模型5：加入所有三个滞留效应的交互 (Pre_Feedback * Pre_Information * Pre_EyeContact)
+# 模型12：加入所有三个滞留效应的交互 (Pre_Feedback * Pre_Information * Pre_EyeContact)
 model_pre_FIE_int <- build_model(
   ISC ~ Feedback * Information * EyeContact + trial_number_z + Pre_Feedback * Pre_Information * Pre_EyeContact + (1 | subject),
   df
