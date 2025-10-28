@@ -17,7 +17,7 @@ df$Pre_Feedback <- factor(df$Pre_Feedback)
 df$Pre_Information <- factor(df$Pre_InformationType)
 df$Pre_EyeContact <- factor(df$Pre_EyeContact)
 
-df$trial_number <- df$trial_number # 假设 Groupid 就是试验顺序
+df$trial_number <- df$trial_number # 假设 trial_number 就是试验顺序
 df$trial_number_z <- scale(df$trial_number) # Z-标准化
 
 cat("数据准备完毕。\n")
